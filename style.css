@@ -25,6 +25,7 @@ html {
 body {
     max-width: 500px;
     margin: auto;
+    position: relative;
 }
 
 /* Header wrapper */
@@ -121,25 +122,34 @@ body {
     -webkit-transform: rotate(135deg);
   }
 
-  .modal {
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      background-color: white;
-  }
+/* MODAL FOR SEARCH */
 
-  .search { 
-      display: flex;
-      justify-content: center;
-  float: center;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
 }
+
+.active {
+    display: block;
+}
+
+.modal .search { 
+    display: flex;
+    justify-content: center;
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
 input { 
     display: flex;
     width: 90%;
