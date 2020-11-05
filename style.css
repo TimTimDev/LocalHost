@@ -201,6 +201,7 @@ input {
 /* Favourite section */
 
 .favourite {
+    display: none;
     position: fixed;
     background-color: white;
     bottom: 0px;
