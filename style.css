@@ -30,20 +30,45 @@ body {
 }
 
 /* Header wrapper */
-
-#header {
-    display: flex;
+.header-container {
     position: sticky;
-    height: 2rem;
     top: 0;
-    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 32px;
+    background-color: rgb(50, 50, 50);
+}
+
+.header-components {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    color: white;
+}
+
+.triangle-left {
+    display: flex;
+    align-items: center;
+}
+
+.triangle-right {
+    display: flex;
+    align-items: center;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
 }
 
 /* Weekdays wrapper styles */
 
 #days-wrapper{
-    position: sticky;
-    top: 2rem;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
