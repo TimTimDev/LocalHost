@@ -19,6 +19,7 @@
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,11 +31,17 @@ body {
 
 #header {
     display: flex;
+    position: sticky;
+    height: 2rem;
+    top: 0;
+    background-color: white;
 }
 
 /* Weekdays wrapper styles */
 
 #days-wrapper{
+    position: sticky;
+    top: 2rem;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
@@ -56,20 +63,32 @@ body {
     font-size: 1.8rem;
     color: black;
     height: 2rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .day-date {
     font-size: 1rem;
 }
 
+/* Panels wrapper */
+
+.panel-container {
+    overflow-y: scroll;
+}
+
 .panel {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 1rem;
     padding: 30px;
     background-color: whitesmoke;
     border-style: solid;
     border-color: black;
+}
+
+#monday {
+    margin-top: 3rem;
 }
 
 #time {
