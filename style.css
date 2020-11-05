@@ -62,19 +62,23 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    padding: 20px;
-    width: 320px;
+    padding: 30px;
     background-color: whitesmoke;
     border-style: solid;
     border-color: black;
-    font-family: Balsamiq Sans;
-    font-style: normal;
-    font-weight: bold;
 }
 
-button {
-    background-color: teal;
-    border-radius: 20px;
+#time {
+    font-size: 1.5rem;
+}
+
+#tnp {
+    display: flex;
+    justify-content: space-between;
+}
+
+#class {
+    font-size: 1.3rem;
 }
 
 .arrow {
