@@ -180,3 +180,32 @@ input {
     align-items: center;
     justify-content: right;
 }
+
+/* Favourite section */
+
+.favourite {
+    position: fixed;
+    background-color: white;
+    bottom: 0px;
+    border-style: solid;
+    border-color: black;
+}
+
+.view-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fav-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 14px;
+}
