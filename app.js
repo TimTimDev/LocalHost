@@ -67,43 +67,48 @@ setTimeout(() => {
         roomList.innerHTML = "";
         groupList.innerHTML = "";
 
-        teachers.forEach(function(item){    
-            if (item.firstname.includes(object) || item.lastname.includes(object)){
-                teacherList.innerHTML += `
-                    <li>
-                        <button onclick='timeTableQuery("lessons/teachers=${item.teacherId}&weeks=",${week}, ${day})'>
-                            ${item.firstname} ${item.lastname}
-                        </button>
-                    </li>`;
-            }
+        let options = {
+            keys: ['firstname', 'lastname']
         }
-        );
-        
-        rooms.forEach(function(item){
-            rooms.push(item);
-            if (item.code.includes(object)){
-                roomList.innerHTML += `
-                    <li>
-                        <button onclick='timeTableQuery("lessons/rooms=${item.roomId}&weeks=",${week}, ${day})'>
-                            ${item.code}
-                        </button>
-                    </li>`;
-            }
+        let fuse = new Fuse(teachers, options)
+        let result = fuse.search(object)
+        result.forEach(function(item){
+            teacherList.innerHTML += `
+                <li>
+                    <button onclick='timeTableQuery("lessons/teachers=${item.item.teacherId}&weeks=",${week}, ${day})'>
+                        ${item.item.firstname} ${item.item.lastname}
+                    </button>
+                </li>`;
+        })
+
+        options = {
+            keys: ['code']
         }
-        );
-        
-        groups.forEach(function(item){
-            groups.push(item);
-            if (item.groupCode.includes(object)){
-                groupList.innerHTML += `
-                    <li>
-                        <button onclick='timeTableQuery("lessons/groups=${item.groupId}&weeks=",${week}, ${day})'>
-                            ${item.groupCode}
-                        </button>
-                    </li>`;
-            }
+        fuse = new Fuse(rooms, options)
+        result = fuse.search(object)
+        result.forEach(function(item){
+            roomList.innerHTML += `
+                <li>
+                    <button onclick='timeTableQuery("lessons/teachers=${item.item.roomId}&weeks=",${week}, ${day})'>
+                        ${item.item.code}
+                    </button>
+                </li>`;
+        })
+
+        options = {
+            keys: ['groupCode']
         }
-        );
+        fuse = new Fuse(groups, options)
+        result = fuse.search(object)
+        result.forEach(function(item){
+            groupList.innerHTML += `
+                <li>
+                    <button onclick='timeTableQuery("lessons/teachers=${item.item.groupId}&weeks=",${week}, ${day})'>
+                        ${item.item.groupCode}
+                    </button>
+                </li>`;
+        });
+    
     }
 
     let currentWeek = findWeek();
