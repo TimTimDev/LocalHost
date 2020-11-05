@@ -199,6 +199,7 @@ body {
 
 .modal .search { 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     float: center;
     padding: 6px;
@@ -216,6 +217,12 @@ input {
     border-color: black;
     border-width: 5px;
     font-size: 1.2rem;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
 /* Footer section */
