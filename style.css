@@ -81,7 +81,10 @@ body {
 
 .panel-container {
     overflow-y: scroll;
+    height: 70vh;
+    scroll-behavior: smooth;
 }
+
 .cross {
     display: flex;
     justify-content: flex-end;

@@ -13,7 +13,7 @@ openModalButton.addEventListener('click', () => {
 
 closeModalButton.addEventListener('click', () => {
     openSearchModal.style.display = 'none'
-    document.body.style.overflowY = 'auto'
+    // document.body.style.overflowY = 'auto'
 })
 
 openFavoriteModal.addEventListener('click', () => {
