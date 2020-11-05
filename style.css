@@ -1,0 +1,54 @@
+#header {
+    display: flex;
+}
+
+#päevad {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    /*height: 40px;
+    width: 40px; */
+    margin: 5px;
+    padding: 12px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+button {
+    background-color: teal;
+    border-radius: 20px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
