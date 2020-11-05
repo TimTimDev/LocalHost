@@ -1,24 +1,61 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+/* Variables */
+
+:root {
+    --WF-border-color: #1A1A1A;
+}
+
+/* General styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
 #header {
     display: flex;
 }
 
-#päevad {
+/* Weekdays wrapper styles */
+
+#days-wrapper{
     display: flex;
     justify-content: space-around;
-    margin: 10px;
-    padding: 10px;
-    background-color: yellow;
+    padding: 1rem;
+    background-color: white;
+    border: 3px solid var(--WF-border-color);
 }
 
 .day {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /*height: 40px;
-    width: 40px; */
-    margin: 5px;
-    padding: 12px;
-    background-color: black;
-    border-radius: 10px;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid var(--WF-border-color);
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    line-height: 2rem;
+}
+
+.day span {
+    font-size: 1rem;
 }
 
 .panel {
@@ -51,4 +88,3 @@ button {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
-  
