@@ -6,6 +6,8 @@
 
 :root {
     --WF-border-color: #1A1A1A;
+    --body-background: #EDF2F7;
+    --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 /* General styles */
@@ -27,20 +29,21 @@ body {
     max-width: 500px;
     margin: auto;
     position: relative;
+    background-color: var(--body-background);
 }
 
 /* Header wrapper */
+
 .header-container {
     position: sticky;
     top: 0;
+    background: white;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
-    border: 2px solid black;
     height: 32px;
-    background-color: rgb(50, 50, 50);
 }
 
 .header-components {
@@ -48,17 +51,19 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 50%;
-    color: white;
+    color: black;
 }
 
 .triangle-left {
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .triangle-right {
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .calendar {
@@ -73,7 +78,7 @@ body {
     justify-content: space-around;
     padding: 1rem;
     background-color: white;
-    border: 3px solid var(--WF-border-color);
+    box-shadow: var(--box-shadow-md);
 }
 
 .day-wrapper {
