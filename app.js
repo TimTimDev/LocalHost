@@ -1,7 +1,23 @@
 // For search modal opening
-
-const closeModalButton = document.querySelector('.cross');
-const searchModal = document.querySelector('.modal');
+const openSearchModal = document.querySelector('.modal');
 const openModalButton = document.querySelector('.search-button');
+const closeModalButton = document.querySelector('.cross');
+const openFavoriteModal = document.querySelector('.star');
+const favoriteModal = document.querySelector('.favourite');
+const cancelFavorites = document.querySelector('.cancel-favorites');
 
-console.log(openModalButton);
+openModalButton.addEventListener('click', () => {
+    openSearchModal.style.display = 'block'
+})
+
+closeModalButton.addEventListener('click', () => {
+    openSearchModal.style.display = 'none'
+})
+
+openFavoriteModal.addEventListener('click', () => {
+    favoriteModal.style.display = 'block'
+})
+
+cancelFavorites.addEventListener('click', () => {
+    favoriteModal.style.display = 'none'
+})
