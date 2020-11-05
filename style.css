@@ -5,8 +5,11 @@
 /* Variables */
 
 :root {
-    --WF-border-color: #1A1A1A;
+    --WF-border-color: #edf2f7;
     --body-background: #EDF2F7;
+    --days-background: #E2E8F0;
+    --bold-font-color: #4A5568;
+    --border-radius-sm: 4px;
     --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
@@ -86,7 +89,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid var(--WF-border-color);
+    background-color: var(--days-background);
+    border-radius: var(--border-radius-sm);
     width: 3.5rem;
     height: 3.5rem;
 }
@@ -129,17 +133,19 @@ body {
     flex-direction: column;
     margin: 1rem;
     padding: 30px;
-    background-color: whitesmoke;
-    border-style: solid;
-    border-color: black;
+    background-color: white;
+    border: 3px solid var(--WF-border-color);
+    border-radius: var(--border-radius-sm);
 }
 
 #monday {
     margin-top: 3rem;
 }
 
-#time {
+.lesson-time {
     font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bold-font-color);
 }
 
 #tnp {
@@ -147,8 +153,14 @@ body {
     justify-content: space-between;
 }
 
-#class {
+.lesson-class {
     font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--bold-font-color);
+}
+
+.lesson-card-content {
+    opacity: 0.7;
 }
 
 .arrow {
@@ -211,11 +223,10 @@ input {
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: black;
-    border: 2px solid black;
-    border-width: 100%;
-    position: sticky; bottom: 0;
-    height: 64px;
+    background-color: var(--bold-font-color);
+    position: fixed; 
+    bottom: 0;
+    height: 4rem;
     width: 100%;
 }
 .star {
