@@ -26,6 +26,8 @@ body {
     margin: auto;
 }
 
+/* Header wrapper */
+
 #header {
     display: flex;
 }
@@ -40,21 +42,23 @@ body {
     border: 3px solid var(--WF-border-color);
 }
 
-.day {
+.day-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 3px solid var(--WF-border-color);
     width: 3.5rem;
     height: 3.5rem;
-    border: 3px solid var(--WF-border-color);
-    text-decoration: none;
-    font-size: 2rem;
-    color: black;
-    line-height: 2rem;
 }
 
-.day span {
+.day {
+    font-size: 1.8rem;
+    color: black;
+    height: 2rem;
+}
+
+.day-date {
     font-size: 1rem;
 }
 
