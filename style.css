@@ -111,7 +111,22 @@ body {
       background-color: white;
   }
 
-  .search {
+  .search { 
       display: flex;
-      justify-self: center;
-  }
+      justify-content: center;
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+input { 
+    display: flex;
+    width: 90%;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    font-size: 1.2rem;
+}
