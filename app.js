@@ -8,10 +8,12 @@ const cancelFavorites = document.querySelector('.cancel-favorites');
 
 openModalButton.addEventListener('click', () => {
     openSearchModal.style.display = 'block'
+    document.body.style.overflowY = 'hidden'
 })
 
 closeModalButton.addEventListener('click', () => {
     openSearchModal.style.display = 'none'
+    document.body.style.overflowY = 'auto'
 })
 
 openFavoriteModal.addEventListener('click', () => {
