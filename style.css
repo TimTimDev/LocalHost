@@ -1,5 +1,37 @@
-#header {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
     display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 32px;
+    background-color: rgb(50, 50, 50);
+}
+
+.header-components {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    color: white;
+}
+
+.triangle-left {
+    display: flex;
+    align-items: center;
+}
+
+.triangle-right {
+    display: flex;
+    align-items: center;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
 }
 
 #päevad {
@@ -52,3 +84,35 @@ button {
     -webkit-transform: rotate(135deg);
   }
   
+  .footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: black;
+      border: 2px solid black;
+      border-width: 100%;
+      position: sticky; bottom: 0;
+      height: 64px;
+      width: 100%;
+  }
+
+  .star {
+    display: flex;
+    align-items: center;
+  }
+
+  .group-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  #group {
+      color: white;
+      font-size: 18px;
+  }
+
+  .search-button {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+  }
