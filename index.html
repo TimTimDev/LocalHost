@@ -7,36 +7,57 @@
     <title>Tunniplaan</title>
 </head>
 <body>
-
-    <div id="header">
-        <p><i class="arrow left"></i></p>
-        <p>Nädal 17 jne jne</p>
-        <p><i class="arrow right"></i></p>
+    <div class="header-container">
+        <div class="header">
+            <div class="header-components">
+                <div class="triangle-left">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.125 10.3125L12.9688 1.38161L12.9687 19.2434L3.125 10.3125Z" fill="white"/>
+                    </svg>
+                </div>
+                <div><p>Nädal 10 jne</p></div>
+                <div class="triangle-right">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.875 9.6875L7.03125 18.6184L7.03125 0.756612L16.875 9.6875Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="calendar">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6.875" y="8.875" width="18" height="15" rx="1" stroke="#1A1A1A" stroke-width="2"/>
+                    <path d="M9.875 5.875L9.875 10.875" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M21.875 5.875L21.875 10.875" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12.375 23.875C12.375 24.1511 12.5989 24.375 12.875 24.375C13.1511 24.375 13.375 24.1511 13.375 23.875H12.375ZM13.375 8.875C13.375 8.59886 13.1511 8.375 12.875 8.375C12.5989 8.375 12.375 8.59886 12.375 8.875H13.375ZM13.375 23.875L13.375 8.875H12.375L12.375 23.875H13.375Z" fill="#1A1A1A"/>
+                    <path d="M18.375 23.875C18.375 24.1511 18.5989 24.375 18.875 24.375C19.1511 24.375 19.375 24.1511 19.375 23.875L18.375 23.875ZM19.375 8.875C19.375 8.59886 19.1511 8.375 18.875 8.375C18.5989 8.375 18.375 8.59886 18.375 8.875L19.375 8.875ZM19.375 23.875L19.375 8.875L18.375 8.875L18.375 23.875L19.375 23.875Z" fill="#1A1A1A"/>
+                </svg>
+            </div>
+        </div>
+    
+        <!-- Wrapper for choosing weekdays -->
+        <div id="days-wrapper">
+            <div class="day-wrapper">
+                <a href="#monday" class="day">E</a>
+                <span class="day-date">02</span>
+            </div>
+            <div class="day-wrapper">
+                <a href="#tuesday" class="day">T</a>
+                <span class="day-date">02</span>
+            </div>
+            <div class="day-wrapper">
+                <a href="#wednesday" class="day">K</a>
+                <span class="day-date">02</span>
+            </div>
+            <div class="day-wrapper">
+                <a href="#thursday" class="day">N</a>
+                <span class="day-date">02</span>
+            </div>
+            <div class="day-wrapper">
+                <a href="#friday" class="day">R</a>
+                <span class="day-date">02</span>
+            </div>
+        </div>
     </div>
-
-    <!-- Wrapper for choosing weekdays -->
-    <div id="days-wrapper">
-        <div class="day-wrapper">
-            <a href="#monday" class="day">E</a>
-            <span class="day-date">02</span>
-        </div>
-        <div class="day-wrapper">
-            <a href="#tuesday" class="day">T</a>
-            <span class="day-date">02</span>
-        </div>
-        <div class="day-wrapper">
-            <a href="#wednesday" class="day">K</a>
-            <span class="day-date">02</span>
-        </div>
-        <div class="day-wrapper">
-            <a href="#thursday" class="day">N</a>
-            <span class="day-date">02</span>
-        </div>
-        <div class="day-wrapper">
-            <a href="#friday" class="day">R</a>
-            <span class="day-date">02</span>
-        </div>
-    </div>
+    
 
     <div class="panel-container">
         <div id="monday">
