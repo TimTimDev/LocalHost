@@ -149,3 +149,34 @@ input {
     border-width: 5px;
     font-size: 1.2rem;
 }
+
+/* Footer section */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border: 2px solid black;
+    border-width: 100%;
+    position: sticky; bottom: 0;
+    height: 64px;
+    width: 100%;
+}
+.star {
+  display: flex;
+  align-items: center;
+}
+.group-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#group {
+    color: white;
+    font-size: 18px;
+}
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
