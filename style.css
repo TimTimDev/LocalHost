@@ -20,6 +20,7 @@ html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 }
 
 body {
@@ -70,6 +71,10 @@ body {
 
 .day-date {
     font-size: 1rem;
+}
+
+.what-day-is {
+    margin-top: 2.2rem;
 }
 
 /* Panels wrapper */
