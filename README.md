@@ -25,11 +25,11 @@ Suhtluskanalid: **Slack**.
 - Meeskonnaga tutvumine
 - Suhtluskanalite loomine
 - Lähteülesande selgitamine
-- Olemasoleva wireframe-i lahenduse analüüs
+- Olemasoleva wireframe-i lahenduse analüüs <br>
 **2.päev**
 - Disaini loomine
 - Back-end loomine
-- Front-end loomine
+- Front-end loomine <br>
 **3.päev**
 - Toote ehitamine
 - Esitluse koostamine
