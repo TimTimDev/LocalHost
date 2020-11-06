@@ -1,18 +1,64 @@
-# LocalHost
+## Meeskond mokaloust
 
-## Meeskond
-# mokaloust
-Liikmed:
+# Küsimused
+
+ 1) Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
+ 2) Üks pehme oskus, mida õppisin ja endas arendasin
+ 3) Üks tehniline oskus, mida õppisin ja endas arendasin
+
+
+# Liikmed:
+
 - Gen
+  1)
+  2)
+  3)
+  
 - Hannes
+  1)
+  2)
+  3)
+  
 - Kevin
+  1)  Ma oleksin soovinud rohkem teha front-endi, sest olen sellega rohkem tegelenud, aga samas õppisin uusi asju tegeledes back-endiga
+  2)  Pehmedest oskustest õppisin ma tiimitööd
+  3)  Õppisin peamiselt Java Scripti fetchi, functiontehni, current date functioni ja fuzzy searchi
+  
 - Joel
+  1)
+  2)
+  3)
+  
 - Johanna
+  1)
+  2)
+  3)
+  
 - Kristjan
+  1)
+  2)
+  3)
+  
 - Lolanaator
+  1)
+  2)
+  3)
+  
 - Oskar
+  1)
+  2)
+  3)
+  
 - Steven
+  1)
+  2)
+  3)
+  
 - Timo
+  1)
+  2)
+  3)
+  
 ## Projekti nimi
 # TUNNIPLAAN 2.0
 ## Projekti eesmärk
