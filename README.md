@@ -25,9 +25,9 @@
   3)  Õppisin peamiselt Java Scripti fetchi, functiontehni, current date functioni ja fuzzy searchi
   
 - Joel
-  1)  Ei, mulle meeldib koodi palju rohkem teha kui disaini.
-  2)  Aja planeerimine oluorras, kus koodisiseseid erinevaid konflikte on palju.
-  3)  Javascript, asünkroonsed funktsioonid, fetch, fuzzy search jpm. Erinevate koodide mergeimine.
+  1)
+  2)
+  3)
   
 - Johanna
   1)
@@ -35,9 +35,9 @@
   3)
   
 - Kristjan
-  1)
-  2)
-  3)
+  1) Algselt olin määratud Javascripti meeskonda aga kuna ei ole sellega varem tegelenud siis otsustasime, et teen pigem html/CSS
+  2) Võrreldes eelmise projektiga olen vahepeal juurde õppinud ja seekord oskasin iseseisvamalt rohkem teha 
+  3) Konkreetne uus oksus mis õppisin on see kuidas Figmast kopeerida sümboli koodi(svg) otse html-i
   
 - Lolanaator
   1)
@@ -94,8 +94,8 @@ Juba esimesel päeval tekkis meeskonnas hea töömeeleolu ja sidusus. Suhtlemine
 ### Kasutatud tarkvara:
 **Github** (projekti haldamine), **Figma** (prototüübi loomine), **Visual Studio Code** (programmeerimine)
 ## Meie toote prototüüp:
-Figma link
+- [Figma](https://www.figma.com/file/766eoYU2AjyJpAfeWptnZr/Untitled?node-id=0%3A1)
 ## Meie meeskonna toode:
-Live link
+- [Tunniplaan](https://local-host.netlify.app)
 ## Meie meeskonna GitHub:
-Link
+- [Github](https://github.com/TimTimDev/LocalHost)
