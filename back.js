@@ -24,11 +24,11 @@ let weeks;
 })()
 
 function timeTableQuery(object, index) {
-    monday.innerHTML = "<p class='what-day-is'>Esmaspäev</p>";
-    tuesday.innerHTML = "<p class='what-day-is'>Teisipäev</p>";
-    wednesday.innerHTML = "<p class='what-day-is'>Kolmapäev</p>";
-    thursday.innerHTML = "<p class='what-day-is'>Neljapäev</p>";
-    friday.innerHTML = "<p class='what-day-is'>Reede</p>";
+    monday.innerHTML = "";
+    tuesday.innerHTML = "";
+    wednesday.innerHTML = "";
+    thursday.innerHTML = "";
+    friday.innerHTML = "";
     fetch('https://be.ta19heinsoo.itmajakas.ee/api/lessons/'+ object + '&weeks=' + index)
         .then(response => response.json())
         .then(data =>
@@ -37,6 +37,9 @@ function timeTableQuery(object, index) {
                 day = day.getDay();
                 if (item.rooms != null) {
                     if (day == 1) {
+                        if (monday.innerHTML === '') {
+                            monday.innerHTML += "<p class='what-day-is'>Esmaspäev</p>"
+                        }
                         monday.innerHTML += `
                             <div class="panel">
                                 <div id="tnp">
@@ -49,6 +52,9 @@ function timeTableQuery(object, index) {
                         `;
                     } 
                     if (day == 2) {
+                        if (tuesday.innerHTML === '') {
+                            tuesday.innerHTML += "<p class='what-day-is'>Teisipäev</p>"
+                        }
                         tuesday.innerHTML += `
                             <div class="panel">
                                 <div id="tnp">
@@ -61,6 +67,9 @@ function timeTableQuery(object, index) {
                         `;
                     } 
                     if (day == 3) {
+                        if (wednesday.innerHTML === '') {
+                            wednesday.innerHTML += "<p class='what-day-is'>Kolmapäev</p>"
+                        }
                         wednesday.innerHTML += `
                             <div class="panel">
                                 <div id="tnp">
@@ -73,6 +82,9 @@ function timeTableQuery(object, index) {
                         `;
                     } 
                     if (day == 4) {
+                        if (thursday.innerHTML === '') {
+                            thursday.innerHTML += "<p class='what-day-is'>Neljapäev</p>"
+                        }
                         thursday.innerHTML += `
                             <div class="panel">
                                 <div id="tnp">
@@ -85,6 +97,9 @@ function timeTableQuery(object, index) {
                         `;
                     } 
                     if (day == 5) {
+                        if (friday.innerHTML === '') {
+                            friday.innerHTML += "<p class='what-day-is'>Reede</p>"
+                        }
                         friday.innerHTML += `
                             <div class="panel">
                                 <div id="tnp">
