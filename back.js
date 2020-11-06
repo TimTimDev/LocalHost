@@ -6,7 +6,15 @@ let wednesday = document.getElementById("wednesday");
 let thursday = document.getElementById("thursday");
 let friday = document.getElementById("friday");
 const closeSearch = document.querySelector('.search-link');
+const groupBox = document.getElementById("group");
+const weekNumber = document.getElementById("week");
+const mon = document.getElementById("mon");
+const tue = document.getElementById("tue");
+const wed = document.getElementById("wed");
+const thu = document.getElementById("thu");
+const fri = document.getElementById("fri");
 
+let currentQuery = [];
 let teachers;
 let groups;
 let rooms;
@@ -23,13 +31,35 @@ let weeks;
     weeks = await response4.json();
 })()
 
-function timeTableQuery(object, index) {
+function timeTableQuery(object, objectId, index) {
+    currentQuery = [];
+    currentQuery.push(object);
+    currentQuery.push(objectId);
+    currentQuery.push(index);
     monday.innerHTML = "<p class='what-day-is'>Esmaspäev</p>";
     tuesday.innerHTML = "<p class='what-day-is'>Teisipäev</p>";
     wednesday.innerHTML = "<p class='what-day-is'>Kolmapäev</p>";
     thursday.innerHTML = "<p class='what-day-is'>Neljapäev</p>";
     friday.innerHTML = "<p class='what-day-is'>Reede</p>";
-    fetch('https://be.ta19heinsoo.itmajakas.ee/api/lessons/'+ object + '&weeks=' + index)
+    week.innerHTML = `<p>Nädal ${index}</p>`;
+    setTimeout(() => {
+        teachers.forEach(function(item){
+            if (item.teacherId == objectId) {
+                groupBox.innerHTML = item.firstname + ' ' + item.lastname;
+            }
+        })
+        groups.forEach(function(item){
+            if (item.groupId == objectId) {
+                groupBox.innerHTML = item.groupCode;
+            }
+        })
+        rooms.forEach(function(item){
+            if (item.roomId == objectId) {
+                groupBox.innerHTML = item.code;
+            }
+        })
+    }, 2000);
+    fetch('https://be.ta19heinsoo.itmajakas.ee/api/lessons/'+ object + '=' + objectId + '&weeks=' + index)
         .then(response => response.json())
         .then(data =>
             data.timetableEvents.forEach(function(item){
@@ -97,15 +127,25 @@ function timeTableQuery(object, index) {
                         `;
                     } 
                 }
-                openSearchModal.style.display = 'none'
+                openSearchModal.style.display = 'none';
             })
             )
 }
 
-timeTableQuery("rooms=4356", 9);
+function addWeek() {
+    currentQuery[2] += 1;
+    timeTableQuery(currentQuery[0], currentQuery[1], currentQuery[2]);
+}
+
+function subtractWeek() {
+    currentQuery[2] -= 1;
+    timeTableQuery(currentQuery[0], currentQuery[1], currentQuery[2]);
+}
+
+timeTableQuery("groups", 3148, 9);
 
 setTimeout(() => {
-
+    
     function findWeek(){
         let today = Date.parse(new Date());
         let result;
@@ -118,9 +158,7 @@ setTimeout(() => {
         return result;
     }
 
-    
-
-    function findResults(object, week, day) {
+    function findResults(object, week) {
         resultList.innerHTML = "";
 
         let options = {
@@ -131,7 +169,7 @@ setTimeout(() => {
         result.forEach(function(item){
             resultList.innerHTML += `
                 <li>
-                    <a class="search-link" onclick='timeTableQuery("teachers=${item.item.teacherId}",${week})'>
+                    <a class="search-link" onclick='timeTableQuery("teachers",${item.item.teacherId},${week})'>
                         ${item.item.firstname} ${item.item.lastname}
                     </a>
                 </li>`;
@@ -145,7 +183,7 @@ setTimeout(() => {
         result.forEach(function(item){
             resultList.innerHTML += `
                 <li>
-                    <a class="search-link" onclick='timeTableQuery("rooms=${item.item.roomId}",${week})'>
+                    <a class="search-link" onclick='timeTableQuery("rooms",${item.item.roomId},${week})'>
                         ${item.item.code}
                     </a>
                 </li>`;
@@ -159,7 +197,7 @@ setTimeout(() => {
         result.forEach(function(item){
             resultList.innerHTML += `
                 <li>
-                    <a class="search-link" onclick='timeTableQuery("groups=${item.item.groupId}",${week})'>
+                    <a class="search-link" onclick='timeTableQuery("groups",${item.item.groupId},${week})'>
                         ${item.item.groupCode}
                     </a>
                 </li>`;
