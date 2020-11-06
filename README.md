@@ -55,9 +55,9 @@
   3)
   
 - Timo
-  1)
-  2)
-  3)
+  1)Kuigi ei ole html/ccs'i vastu midagi oleks tahtnud JavaScripti kuna õpin seda kodus ka iseseisvalt.
+  2)Arendasin loovat mõtlemist, probleemide lahendamisele lähenemist.
+  3)Õppisin julgemalt git'i kasutama, varem oli üsna tundmatu maa.
   
 ## Projekti nimi
 # TUNNIPLAAN 2.0
