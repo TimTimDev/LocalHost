@@ -26,7 +26,7 @@
   
 - Joel
   1)Ei, mulle meeldib koodi palju rohkem teha kui disaini.
-  2)
+  2)Aja planeerimine oluorras, kus koodisiseseid erinevaid konflikte on palju.
   3)Javascript, asünkroonsed funktsioonid, fetch, fuzzy search jpm. Erinevate koodide mergeimine.
   
 - Johanna
