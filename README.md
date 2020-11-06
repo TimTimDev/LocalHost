@@ -41,8 +41,8 @@ Juba esimesel päeval tekkis meeskonnas hea töömeeleolu ja sidusus. Suhtlemine
 ### Kes mida?
 - Peale meeskonnaga tutvumist panime töösse suhtluskanalid - Meeskonna juht.
 - Selgitasime lähteülesannet, analüüsisime olemasolevat lahendust ja viisime läbi ajurünnaku uue lahenduse leidmiseks - seda tegime kõik koos.
-- Oskar ja Remi Lõid prototüübi Figmas
-- Toote ehitamine Visual Studio Code´is - Front-end Gen, Johanna, Timo ja Kristjan. Back-end Kevin ja Joel
+- Oskar ja Remi lõid prototüübi Figmas
+- Toote ehitamine Visual Studio Code´is - Front-end: Gen, Johanna, Timo ja Kristjan.<br> Back-end: Kevin ja Joel
 - Toote Zone keskkonda üles laadimine - Meeskonna juht.
 - Tegevuste dokumenteerimine, GitHub´is issuede lisamine ja administreerimine, kokkuvõte projektitööst - Kõik tiimi liikmed.
 ### Kasutatud tarkvara:
