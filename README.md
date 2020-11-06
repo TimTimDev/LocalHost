@@ -25,9 +25,9 @@
   3)  Õppisin peamiselt Java Scripti fetchi, functiontehni, current date functioni ja fuzzy searchi
   
 - Joel
-  1)
+  1)Ei, mulle meeldib koodi palju rohkem teha kui disaini.
   2)
-  3)
+  3)Javascript, asünkroonsed funktsioonid, fetch, fuzzy search jpm. Erinevate koodide mergeimine.
   
 - Johanna
   1)
