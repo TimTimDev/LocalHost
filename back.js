@@ -31,17 +31,16 @@ let weeks;
     weeks = await response4.json();
 })()
 
-
 function timeTableQuery(object, objectId, index) {
     currentQuery = [];
     currentQuery.push(object);
     currentQuery.push(objectId);
     currentQuery.push(index);
-    monday.innerHTML = "<p class='what-day-is'>Esmaspäev</p>";
-    tuesday.innerHTML = "<p class='what-day-is'>Teisipäev</p>";
-    wednesday.innerHTML = "<p class='what-day-is'>Kolmapäev</p>";
-    thursday.innerHTML = "<p class='what-day-is'>Neljapäev</p>";
-    friday.innerHTML = "<p class='what-day-is'>Reede</p>";
+    monday.innerHTML = "";
+    tuesday.innerHTML = "";
+    wednesday.innerHTML = "";
+    thursday.innerHTML = "";
+    friday.innerHTML = "";
     week.innerHTML = `<p>Nädal ${index}</p>`;
     setTimeout(() => {
         teachers.forEach(function(item){
@@ -61,7 +60,6 @@ function timeTableQuery(object, objectId, index) {
         })
     }, 2000);
     fetch('https://be.ta19heinsoo.itmajakas.ee/api/lessons/'+ object + '=' + objectId + '&weeks=' + index)
-
         .then(response => response.json())
         .then(data =>
             data.timetableEvents.forEach(function(item){
@@ -70,7 +68,7 @@ function timeTableQuery(object, objectId, index) {
                 if (item.rooms != null) {
                     if (day == 1) {
                         if (monday.innerHTML === '') {
-                            monday.innerHTML += "<p class='what-day-is'>Esmaspäev</p>"
+                            monday.innerHTML += "<p class='what-day-is'>Esmaspäev</p>";
                         }
                         monday.innerHTML += `
                             <div class="panel">
@@ -85,7 +83,7 @@ function timeTableQuery(object, objectId, index) {
                     } 
                     if (day == 2) {
                         if (tuesday.innerHTML === '') {
-                            tuesday.innerHTML += "<p class='what-day-is'>Teisipäev</p>"
+                            tuesday.innerHTML += "<p class='what-day-is'>Teisipäev</p>";
                         }
                         tuesday.innerHTML += `
                             <div class="panel">
@@ -100,7 +98,7 @@ function timeTableQuery(object, objectId, index) {
                     } 
                     if (day == 3) {
                         if (wednesday.innerHTML === '') {
-                            wednesday.innerHTML += "<p class='what-day-is'>Kolmapäev</p>"
+                            wednesday.innerHTML += "<p class='what-day-is'>Kolmapäev</p>";
                         }
                         wednesday.innerHTML += `
                             <div class="panel">
@@ -115,7 +113,7 @@ function timeTableQuery(object, objectId, index) {
                     } 
                     if (day == 4) {
                         if (thursday.innerHTML === '') {
-                            thursday.innerHTML += "<p class='what-day-is'>Neljapäev</p>"
+                            thursday.innerHTML += "<p class='what-day-is'>Neljapäev</p>";
                         }
                         thursday.innerHTML += `
                             <div class="panel">
@@ -130,7 +128,7 @@ function timeTableQuery(object, objectId, index) {
                     } 
                     if (day == 5) {
                         if (friday.innerHTML === '') {
-                            friday.innerHTML += "<p class='what-day-is'>Reede</p>"
+                            friday.innerHTML += "<p class='what-day-is'>Reede</p>";
                         }
                         friday.innerHTML += `
                             <div class="panel">
