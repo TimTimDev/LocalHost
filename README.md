@@ -30,9 +30,9 @@
   3)  Javascript, asünkroonsed funktsioonid, fetch, fuzzy search jpm. Erinevate koodide mergeimine.
   
 - Johanna
-  1)
-  2)
-  3)
+  1) Ma lootsin, et olen Figma tiimis sest siis oleksin saanud rohkem tiimikaaslastega seostuda. Hiljem mõtlesin selle peale, et kui mind oleks paigutatud Figma gruppi siis ei oleks ma nii palju tehnilist teemat selgeks saanud. Kindlasti on ka Figmas midagi veel juurde õppida. 
+  2) Õppisin nii raskemaid kui ka kergemaid asju. Seostuda on natukene raske alguses, kuid see kõik võtab aega ja seedimist. Kui ma peaksin ütlema siis võibolla Flexidest sain natuke rohkem aru.
+  3) Seekord sain veel rohkem targemaks. Kuna mõndi asju oleme tundides õppinud siis sellel projektil tekkisid seosed erinevate asjadega. Aga selline tehniline oskus või reegel nii öelda mille sain enam vähem selgeks oli siis div-ide süsteem.
   
 - Kristjan
   1) Algselt olin määratud Javascripti meeskonda aga kuna ei ole sellega varem tegelenud siis otsustasime, et teen pigem html/CSS
