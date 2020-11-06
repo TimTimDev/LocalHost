@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tunniplaan</title>
 </head>
+
 <body>
     <div class="header-container">
         <div class="header">
             <div class="header-components">
-                <div class="triangle-left">
+                <div class="triangle-left" onclick=subtractWeek()>
                     <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.13205 13.0289L1.13205 7.02888L7.13205 1.02888" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>  
+                        <path d="M7.13205 13.0289L1.13205 7.02888L7.13205 1.02888" stroke="black" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
-                <div><p class="current-week">Nädal 10</p></div>
-                <div class="triangle-right">
+                <div>
+                    <p id="week" class="current-week">Nädal 10</p>
+                </div>
+                <div class="triangle-right" onclick=addWeek()>
                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L1 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1L7 7L1 13" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </div>
             </div>
             <div class="group-box">
-                <p id="group">TA-20</p>
+                <p id="group">TAK-19</p>
             </div>
         </div>
-    
+
         <!-- Wrapper for choosing weekdays -->
         <div id="days-wrapper">
             <div class="day-wrapper">
                 <a href="#monday" class="day">E</a>
-                <span class="day-date">02</span>
+                <span id="mon" class="day-date">02</span>
             </div>
             <div class="day-wrapper">
                 <a href="#tuesday" class="day">T</a>
-                <span class="day-date">03</span>
+                <span id="tue" class="day-date">03</span>
             </div>
             <div class="day-wrapper">
                 <a href="#wednesday" class="day">K</a>
-                <span class="day-date">04</span>
+                <span id="wed" class="day-date">04</span>
             </div>
             <div class="day-wrapper">
                 <a href="#thursday" class="day">N</a>
-                <span class="day-date">05</span>
+                <span id="thu" class="day-date">05</span>
             </div>
             <div class="day-wrapper">
                 <a href="#friday" class="day">R</a>
-                <span class="day-date">06</span>
+                <span id="fri" class="day-date">06</span>
             </div>
         </div>
     </div>
-    
+
 
     <div class="panel-container">
         <div id="monday">
             <p class="what-day-is">Esmaspäev</p>
-        </div>     
+        </div>
         <div id="tuesday">
             <p class="what-day-is">Teisipäev</p>
         </div>
@@ -118,7 +124,7 @@
                 <br>
                 <span class="view-name">Vaate nimetus</span>
             </div>
-    
+
             <div class="choices">
                 <span class="cancel-favorites">LOOBU</span>
                 <span class="approve-favorites">LISA</span>
